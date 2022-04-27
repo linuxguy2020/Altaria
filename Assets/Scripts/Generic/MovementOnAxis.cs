@@ -4,25 +4,30 @@ using UnityEngine;
 
 public class MovementOnAxis : MonoBehaviour
 {
-
+    //velocità di movimento
     public float speed = 0.3f;
-    public float range = 1.0f;
+    //lunghezza movimento positivo
+    public float positiveLength = 1.0f;
+    //lunghezza movimento negativo
+    public float negativeLength = 1.0f;
+    //asse su cui viene eseguito il movimento
     public char axis = 'x';
-
+    //variabile da utilizzare per fermare il movimento
     public bool moving = false;
-    public bool falling = false;
 
-
+    //indicatore della direzione dello spostamento
     private bool positiveDirection = true;
+    //posizione iniziale oggetto
     private Vector3 spawnPos;
 
     // Start is called before the first frame update
     void Start()
     {
-        init();
+        Initialize();
     }
 
-    void init()
+    //metodo che salva la posizione iniziale dell'oggetto
+    void Initialize()
     {
         spawnPos = transform.position;
     }
@@ -30,38 +35,38 @@ public class MovementOnAxis : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveColumn();
+        move();
     }
 
-    void moveColumn()
+    //metodo che muove l'oggetto, se configurato per farlo
+    void move()
     {
         if(moving == true)
         {
             manageMovement();
         }
-        if(falling == true)
-        {
-            manageFall();
-        }
+        
     }
+
+    //metodo che gestisce il movimento per i vari assi, di default l'asse è x anche in caso di input non corretto
     void manageMovement()
     {
         if(axis =='y')
         {
             if (positiveDirection == true)
             {
-                // move right
+                // move up
                 transform.Translate(Vector3.up * speed * Time.deltaTime);
-                if (transform.position.y >= spawnPos.y + range)
+                if (transform.position.y >= spawnPos.y + positiveLength)
                 {
                     positiveDirection = false;
                 }
             }
             else
             {
-                // move left
+                // move down
                 transform.Translate(Vector3.down * speed * Time.deltaTime);
-                if (transform.position.y <= spawnPos.y - range)
+                if (transform.position.y <= spawnPos.y - negativeLength)
                 {
                     positiveDirection = true;
                 }
@@ -71,18 +76,18 @@ public class MovementOnAxis : MonoBehaviour
         {
             if (positiveDirection == true)
             {
-                // move right
+                // move forward
                 transform.Translate(Vector3.forward * speed * Time.deltaTime);
-                if (transform.position.z >= spawnPos.z + range)
+                if (transform.position.z >= spawnPos.z + positiveLength)
                 {
                     positiveDirection = false;
                 }
             }
             else
             {
-                // move left
+                // move back
                 transform.Translate(Vector3.back * speed * Time.deltaTime);
-                if (transform.position.z <= spawnPos.z - range)
+                if (transform.position.z <= spawnPos.z - negativeLength)
                 {
                     positiveDirection = true;
                 }
@@ -94,7 +99,7 @@ public class MovementOnAxis : MonoBehaviour
             {
                 // move right
                 transform.Translate(Vector3.right * speed * Time.deltaTime);
-                if (transform.position.x >= spawnPos.x + range)
+                if (transform.position.x >= spawnPos.x + positiveLength)
                 {
                     positiveDirection = false;
                 }
@@ -103,17 +108,11 @@ public class MovementOnAxis : MonoBehaviour
             {
                 // move left
                 transform.Translate(Vector3.left * speed * Time.deltaTime);
-                if (transform.position.x <= spawnPos.x - range)
+                if (transform.position.x <= spawnPos.x - negativeLength)
                 {
                     positiveDirection = true;
                 }
             }
         }
-    }
-
-    void manageFall()
-    {
-        transform.Translate(Vector3.down * 5.8f * Time.deltaTime);
-
     }
 }
