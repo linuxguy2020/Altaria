@@ -35,21 +35,21 @@ public class MovementOnAxis : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        move();
+        Move();
     }
 
     //metodo che muove l'oggetto, se configurato per farlo
-    void move()
+    void Move()
     {
         if(moving == true)
         {
-            manageMovement();
+            ManageMovement();
         }
         
     }
 
     //metodo che gestisce il movimento per i vari assi, di default l'asse è x anche in caso di input non corretto
-    void manageMovement()
+    void ManageMovement()
     {
         if(axis =='y')
         {
