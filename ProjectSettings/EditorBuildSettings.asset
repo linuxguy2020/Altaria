@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Temple.unity
     guid: e9d92cba446386e42bfa8eb4e3feb9f2
+  - enabled: 1
+    path: Assets/Scenes/Finale.unity
+    guid: 31a40747e415d5447bf372d3bb353666
   m_configObjects: {}

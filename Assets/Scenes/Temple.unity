@@ -5291,11 +5291,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8755152961033555581, guid: 58cb70493c239bf46abb0d413b3ed7c5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000000028735407
+      value: -0.0000000028735407
       objectReference: {fileID: 0}
     - target: {fileID: 8755152961033555581, guid: 58cb70493c239bf46abb0d413b3ed7c5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.5337515e-10
+      value: -2.5337515e-10
       objectReference: {fileID: 0}
     - target: {fileID: 8755152961144348928, guid: 58cb70493c239bf46abb0d413b3ed7c5, type: 3}
       propertyPath: m_Name
@@ -5387,11 +5387,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8755152961217576850, guid: 58cb70493c239bf46abb0d413b3ed7c5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000000427739
+      value: -0.000000004277388
       objectReference: {fileID: 0}
     - target: {fileID: 8755152961217576850, guid: 58cb70493c239bf46abb0d413b3ed7c5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -4.5570164e-10
+      value: 4.5570145e-10
       objectReference: {fileID: 0}
     - target: {fileID: 8755152961548945158, guid: 58cb70493c239bf46abb0d413b3ed7c5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5411,11 +5411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8755152961548945158, guid: 58cb70493c239bf46abb0d413b3ed7c5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000004291119
+      value: 0.0000000042911195
       objectReference: {fileID: 0}
     - target: {fileID: 8755152961548945158, guid: 58cb70493c239bf46abb0d413b3ed7c5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 3.000248e-10
+      value: -3.0002484e-10
       objectReference: {fileID: 0}
     - target: {fileID: 9082129074787117776, guid: 58cb70493c239bf46abb0d413b3ed7c5, type: 3}
       propertyPath: m_LocalScale.x
@@ -43761,7 +43761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   white: {fileID: 471752165}
-  SceneId: 0
+  SceneId: 3
   delay: 3
 --- !u!54 &1294742807
 Rigidbody:
