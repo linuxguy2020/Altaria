@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class RespawnScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // SerializeField allows making private variable visible in
+    //inspector without making it public
+    [SerializeField] private Transform player;
+    [SerializeField] private Transform respawnPoint;
+
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            // player's position will be set to respawn point
+            player.transform.position = respawnPoint.transform.position;
+           
+            //apply trasnsform changes to physics engine
+            Physics.SyncTransforms();
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
