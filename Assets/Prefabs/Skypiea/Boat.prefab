@@ -350,8 +350,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9142952162042387557}
-  - component: {fileID: 7565942133251792099}
-  - component: {fileID: 4047258122609987580}
   m_Layer: 6
   m_Name: Boat
   m_TagString: Untagged
@@ -376,29 +374,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 182, z: 0}
---- !u!65 &7565942133251792099
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8478477237113145055}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08071842, y: 0.05057115, z: 0.009314204}
-  m_Center: {x: -0.00033082478, y: 0.015064947, z: -0.033010256}
---- !u!65 &4047258122609987580
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8478477237113145055}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08071842, y: 0.05057115, z: 0.009314204}
-  m_Center: {x: -0.0003308248, y: 0.01506495, z: 0.03}

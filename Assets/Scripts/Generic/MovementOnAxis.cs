@@ -14,9 +14,9 @@ public class MovementOnAxis : MonoBehaviour
     public char axis = 'x';
     //variabile da utilizzare per fermare il movimento
     public bool moving = false;
-
     //indicatore della direzione dello spostamento
-    private bool positiveDirection = true;
+    public bool positiveDirection = true;
+
     //posizione iniziale oggetto
     private Vector3 spawnPos;
 
@@ -38,20 +38,26 @@ public class MovementOnAxis : MonoBehaviour
         Move();
     }
 
+
+    void ActivateMovement()
+    {
+        moving = true;
+    }
+
     //metodo che muove l'oggetto, se configurato per farlo
     void Move()
     {
-        if(moving == true)
+        if (moving == true)
         {
             ManageMovement();
         }
-        
+
     }
 
     //metodo che gestisce il movimento per i vari assi, di default l'asse è x anche in caso di input non corretto
     void ManageMovement()
     {
-        if(axis =='y')
+        if (axis == 'y')
         {
             if (positiveDirection == true)
             {

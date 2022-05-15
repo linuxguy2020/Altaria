@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7897839192008821342}
   m_Layer: 0
   m_Name: FireSphere
-  m_TagString: Untagged
+  m_TagString: Sphere
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,6 +149,10 @@ PrefabInstance:
     - target: {fileID: 7300492982144604631, guid: 04be7df77d7b3dd4fb74b46827b1636a, type: 3}
       propertyPath: RotationModule.enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7300492982144604631, guid: 04be7df77d7b3dd4fb74b46827b1636a, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7300492982144604631, guid: 04be7df77d7b3dd4fb74b46827b1636a, type: 3}
       propertyPath: InitialModule.maxNumParticles

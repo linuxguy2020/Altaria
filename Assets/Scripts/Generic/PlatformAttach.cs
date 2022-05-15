@@ -6,6 +6,14 @@ public class PlatformAttach : MonoBehaviour
 {
     public GameObject Player;
 
+    private bool awakeMovement = false;
+
+    //Metodo che assegna al componente il ruolo di sveglia del movimento in caso di collisione
+    public void AwakeMovementOnTrigger()
+    {
+        awakeMovement = true;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         // if the colliding game object is the player,
@@ -18,6 +26,15 @@ public class PlatformAttach : MonoBehaviour
         if(other.gameObject == Player)
         {
             Player.transform.parent = transform;
+            if (awakeMovement)
+            {
+                ActivateMovement activateMovement = transform.parent.GetComponent<ActivateMovement>();
+                if(activateMovement != null)
+                {
+                    activateMovement.StartMovement();
+                }
+                awakeMovement = false;
+            }
         }
     }
 
