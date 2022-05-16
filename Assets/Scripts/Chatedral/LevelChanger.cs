@@ -19,7 +19,7 @@ public class LevelChanger : MonoBehaviour
 
     private void OnTriggerEnter(Collider c)
    {
-        if(c.gameObject.name == "Ch39"){
+        if(c.gameObject.name == "Dyonisus"){
           StartCoroutine(LoadLevelAfterDelay(delay));
         }    
    }

@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Finale.unity
     guid: 31a40747e415d5447bf372d3bb353666
+  - enabled: 1
+    path: Assets/Scenes/LavaLevel.unity
+    guid: c8f57a28dcbc4544994936f846316ca0
   m_configObjects: {}
