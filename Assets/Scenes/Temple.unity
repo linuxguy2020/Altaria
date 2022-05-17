@@ -3269,11 +3269,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7721929487077195248, guid: 194f9fe96c08fcf45b09b36522444b24, type: 3}
   m_PrefabInstance: {fileID: 4327885612568978046}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &480779790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7727419522343057102, guid: 194f9fe96c08fcf45b09b36522444b24, type: 3}
-  m_PrefabInstance: {fileID: 4327885612568978046}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &484070285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6888,6 +6883,11 @@ PrefabInstance:
 --- !u!4 &945061806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6279830959940632962, guid: 8e9a92012c3671349865dd616af48070, type: 3}
+  m_PrefabInstance: {fileID: 945061805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &945061807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6283350605947177660, guid: 8e9a92012c3671349865dd616af48070, type: 3}
   m_PrefabInstance: {fileID: 945061805}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &956210317
@@ -11680,8 +11680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OBJEndPortal: {fileID: 51007988}
-  OBJCrystal1: {fileID: 1643158133}
-  OBJCrystal2: {fileID: 480779790}
+  OBJCrystal1: {fileID: 4327885612568978047}
+  OBJCrystal2: {fileID: 945061807}
 --- !u!1 &1535589860
 GameObject:
   m_ObjectHideFlags: 0
@@ -12194,11 +12194,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1643158133 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6283350605947177660, guid: 8e9a92012c3671349865dd616af48070, type: 3}
-  m_PrefabInstance: {fileID: 945061805}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1645161615
 GameObject:
   m_ObjectHideFlags: 0
@@ -15815,6 +15810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 194f9fe96c08fcf45b09b36522444b24, type: 3}
+--- !u!1 &4327885612568978047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7727419522343057102, guid: 194f9fe96c08fcf45b09b36522444b24, type: 3}
+  m_PrefabInstance: {fileID: 4327885612568978046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5273876487984640504
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,6 +13,8 @@ public class StartManager : MonoBehaviour
 
     //On start, search the game manager object and call load game method
     void Start(){
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         GameManager = GameObject.Find("GameManager");
         LoadGame();
     }
@@ -35,10 +37,7 @@ public class StartManager : MonoBehaviour
 	    if (File.Exists(Application.dataPath + "/Saves/MySaveData.json"))
 	    {
 		    File.Delete(Application.dataPath + "/Saves/MySaveData.json");
-            Debug.Log("Game data erased!");
         }
-        else
-            Debug.LogError("There is no data to erase!");
     }
 
     //Manage the game start: if intro field is equal to 0, it's the first time that game is started. Else, the start menu is showed

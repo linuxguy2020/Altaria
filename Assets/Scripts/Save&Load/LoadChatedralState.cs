@@ -31,7 +31,7 @@ public class LoadChatedralState : MonoBehaviour
     {
         int[] actualState = GameManager.GetComponent<SaveManager>().LoadSceneStateManager();
         if(actualState[0] == 1){
-                OBJCrystal1.SetActive(true);
+            OBJCrystal1.SetActive(true);
         }
         if(actualState[1] == 1){
             OBJCrystal2.SetActive(true);

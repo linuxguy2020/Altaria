@@ -5,7 +5,7 @@ using System.IO;
 public class SaveCrystalState : MonoBehaviour
 {
     private GameObject GameManager;
-    public int CrystalNumber = 1;
+    public int CrystalNumber;
 
     //On start, search the game manager object
     void Start(){
