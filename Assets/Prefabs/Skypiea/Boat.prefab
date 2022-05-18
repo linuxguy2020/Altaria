@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4104990089212967348}
   - component: {fileID: 7632568487748918979}
   - component: {fileID: 8748510495638584181}
-  - component: {fileID: 6992509703179405727}
   m_Layer: 6
   m_Name: wood boat (render) 4
   m_TagString: Untagged
@@ -96,19 +95,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.016006503, y: 0.0047496436, z: 0.04870701}
   m_Center: {x: -8.601446e-12, y: 0.0033887094, z: -0.015765969}
---- !u!114 &6992509703179405727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648049984439981897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c47f8a5f66fc2ff499a2b6dd3df08186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
 --- !u!1 &1539225672694159901
 GameObject:
   m_ObjectHideFlags: 0
