@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    
+    //Immagini dei poteri visualizzati in alto a destra
 	public Image fire;
 	public Image wind;
 	public Image water;
@@ -13,6 +13,7 @@ public class UIController : MonoBehaviour
 	// Start is called before the first frame update
     void Start()
     {
+		//Situazione di default per i poteri 
         defaultPower();
     }
 
@@ -24,7 +25,7 @@ public class UIController : MonoBehaviour
 
 
 	void SetMagicPower(){
-
+	// Al click dei tasti 1,2,3 cambia il potere, attivando o disattivando l'immagine in alto a destra
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
 			fire.enabled=true;
 			wind.enabled=false;

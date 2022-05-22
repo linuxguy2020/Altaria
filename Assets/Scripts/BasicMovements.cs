@@ -7,7 +7,7 @@ public class BasicMovements : MonoBehaviour
 {
     
     // SERIALIZE FIELD 
-    [SerializeField] private float moveSpeed;
+    [SerializeField] private float moveSpeed; 
     [SerializeField] private float walkSpeed;
     [SerializeField] private bool isGrounded;
     [SerializeField] private float groundCheckDistance;
@@ -15,7 +15,7 @@ public class BasicMovements : MonoBehaviour
     [SerializeField] private float gravity;
     
 	//VARIABLES
-	private float jumpHeight;
+	public float jumpHeight;
     private Vector3 velocity;
     private Vector3 moveDirection;
     private CharacterController controller;
@@ -92,7 +92,7 @@ public class BasicMovements : MonoBehaviour
     
     private void Jump()
     {		
-			setJumpHeight(1.5f);
+		//	setJumpHeight(1.5f);
 			isJumping=true;
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity); //Equazione per il calcolo del salto
             animator.SetLayerWeight(animator.GetLayerIndex("Jump"), 1); //SET ANIMAZIONE
@@ -103,7 +103,7 @@ public class BasicMovements : MonoBehaviour
 	
 	private void setJumpHeight(float height){
 
-		jumpHeight=height;
+		jumpHeight=height; //Altezza del salto
 	}
 
 

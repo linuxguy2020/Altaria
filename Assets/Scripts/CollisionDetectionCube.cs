@@ -4,91 +4,69 @@ using UnityEngine;
 
 public class CollisionDetectionCube : MonoBehaviour
 {
+	//Assegno allo script i materiali che mi servono
 	public Material fireMaterial;
 	public Material waterMaterial;
 	public Material windMaterial;
-
-	public Material coalMaterial;
-	
-	private Vector3 newPosition;
-	private ParticleSystem.MainModule pMain;
-
-	private ParticleSystem ps;
-	
-	
-	
-	void Start()
-	{
-		ps = GetComponent<ParticleSystem>();
-		if (gameObject.tag == "CoalCube")
-		{
-			
-			//pMain =ps.main;
-			ps.Stop();
-		}
-		//newPosition = transform.position;
-		
-		
-	}
-
+    public Material coalMaterial;
+    //Prefab necessari per gli effetti dei detriti e del vapore
+    private GameObject WindCubeInstance;
+    [SerializeField] private GameObject WindCube;
+    private GameObject DebrisCubeInstance;
+    [SerializeField] private GameObject DebrisCube;
+    
+	    
 	private void OnTriggerEnter(Collider col)
 	{
+		//Se il cubo ha il tag FireCube
 		if (gameObject.tag == "FireCube")
 		{
-			//SE è UN CUBO DI FUOCO PUOI SOLO UTILIZZARE L'ACQUA PER RENDERLO CARBONE
+			//Se la sfera con cui collide ha il potere dell'acqua, il cubo diventa di carbone 
 			if (col.gameObject.tag == "WaterPower")
 			{
-				GetComponent<MeshRenderer>().material = coalMaterial;
-				GetComponent<ParticleSystem>().Stop(); 
-				gameObject.tag = "CoalCube";
+				GetComponent<MeshRenderer>().material = coalMaterial; //Cambio il materiale del cubo in carbone
+				GetComponent<ParticleSystem>().Stop();  //Fermo il particle
+				gameObject.tag = "CoalCube"; //Cambio il tag in Carbone
 			}
 
 		}
+		//Se il cubo ha il tag WaterCube
 		else if (gameObject.tag == "WaterCube")
 		{
-			//SE E' UN CUBO DI ACQUA CON IL FUOCO PUOI RENDERLO VAPORE PER SPOSTARLO
+			//Se la sfera con cui collide ha il potere del fuoco
 			if (col.gameObject.tag == "FirePower")
 			{
-				GetComponent<MeshRenderer>().material = windMaterial;
+				//L'acqua evapora, creando un cubo vuoto con il particle del vapore , serve solo per creare l'effetto
+				WindCubeInstance = GameObject.Instantiate(WindCube, gameObject.transform.position, 
+					Quaternion.Euler(0,0,0));
+				Destroy(gameObject);
+				Destroy(WindCubeInstance, 5f);
+
+
+
 			}
 		}
-		//SE E UN CUBO DI CARBONE PUOI RIACCENDERLO, DISTRUGGERLO E SPOSTARLO CON TUTTI E 3 I POTERI
+		//Se il cubo ha il tag CoalCube
 		else if (gameObject.tag == "CoalCube")
 		{
+			//Se la sfera con cui collide ha il potere del fuoco
 			if (col.gameObject.tag == "FirePower")
 			{
+				//Riaccendo il carbone in fuoco, cambiando materiale e riattivando il particle
 				GetComponent<MeshRenderer>().material = fireMaterial;
 				GetComponent<ParticleSystem>().Play();
-				//pMain.startSize = new ParticleSystem.MinMaxCurve(0.5f, 1f);
 				gameObject.tag = "FireCube";
 			}
+			//Se la sfera con cui collide ha il potere dell'acqua
 			else if (col.gameObject.tag == "WaterPower")
 			{
+				//Il cubo viene distrutto,creando un cubo vuoto con il particle dei detriti,serve solo per creare l'effetto
+				DebrisCubeInstance = GameObject.Instantiate(DebrisCube, gameObject.transform.position, 
+					Quaternion.Euler(0,0,0));
 				Destroy(gameObject);
-			}
-			else if (col.gameObject.tag == "WindPower")
-			{
-				/*Vector3 dir = transform.position - col.gameObject.transform.position;
-				Debug.Log("Dir x: "+dir.x+" Dir y: "+dir.y+" Dir z: "+dir.z);
-				if (dir.x > 0)
-				{ 
-					//transform.Translate (1f, 0f, 0f);
-				}
-				if(dir.x < 0)
-				{
-					transform.Translate (-1f, 0f, 0f);
-				}
-				/*if(dir.z>0)
-				{
-					transform.Translate (0f, 0f, 1f);
-				}
-				if(dir.z<0)
-				{
-					transform.Translate (0f, 0f, -1f);
-				}
-				*/
+				Destroy(DebrisCubeInstance, 8f);
 				
-					
+				
 				
 			}
 		}

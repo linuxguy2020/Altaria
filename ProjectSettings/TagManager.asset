@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Sphere
   - Undefined
+  - FirePower
+  - WindPower
+  - WaterPower
+  - FireCube
+  - WaterCube
+  - CoalCube
   layers:
   - Default
   - TransparentFX
