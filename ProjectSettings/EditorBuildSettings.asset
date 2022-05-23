@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LavaLevel.unity
     guid: c8f57a28dcbc4544994936f846316ca0
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 7293f751049683b42ac76bc9f1013690
+  - enabled: 1
+    path: Assets/Scenes/SkypieaLevel.unity
+    guid: 6b8fd0a9d8ab78f44bfbd527fbc9662f
   m_configObjects: {}

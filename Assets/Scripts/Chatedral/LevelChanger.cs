@@ -10,7 +10,7 @@ public class LevelChanger : MonoBehaviour
     //loading is done with a slight delay to allow the fade in animation to complete
 
     [SerializeField] private GameObject white;
-    public int SceneId = 0;
+    public string SceneName = "MainMenu";
     public float delay = 0;
 
     void Start(){
@@ -28,7 +28,7 @@ public class LevelChanger : MonoBehaviour
      {
          white.GetComponent<Animator>().enabled = true;
          yield return new WaitForSeconds(delay);
-         SceneManager.LoadScene(SceneId);
+         SceneManager.LoadScene(SceneName);
      }
 
 }

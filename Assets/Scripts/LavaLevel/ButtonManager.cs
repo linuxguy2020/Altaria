@@ -6,10 +6,10 @@ public class ButtonManager : MonoBehaviour
 {
     //Get the column to unlock and its position
     [SerializeField] private GameObject ColumnToMove;
+    [SerializeField] private GameObject Symbol;
+    public Material newMat;
     private Vector3 pos;
-    private Vector3 pos1;
     private int pressed = 0;
-    public bool negative = false;
 
     //Update the column y axis (increase by 3 units)
     private void MoveGameObject()
@@ -22,24 +22,15 @@ public class ButtonManager : MonoBehaviour
     }
 
     //Update the button position
-    private void UpdateButtonPosition(){
-        pos1 = gameObject.transform.localPosition;
-        float x = pos1[0];
-        float y = pos1[1];
-        float z;
-        if(negative){
-            z = pos1[2] - 0.20f;
-        }
-        else{
-            z = pos1[2] + 0.20f;
-        }
-        gameObject.transform.localPosition = new Vector3(x, y, z);
+    private void UpdateButton(){
+        //Change symbol texture to active
+        Symbol.GetComponent<MeshRenderer>().material = newMat;
     }
 
     //When the player hit the button with a specific enchantment, the button will be activated
     private void OnTriggerEnter(Collider c)
     {    
-        if(c.gameObject.name == "Dyonisus"){
+        if(c.gameObject.tag == "WindPower"){
           StartCoroutine(UnlockColumn());
         }    
     }
@@ -48,7 +39,7 @@ public class ButtonManager : MonoBehaviour
     IEnumerator UnlockColumn()
      {
          if(pressed == 0){
-            UpdateButtonPosition();
+            UpdateButton();
             yield return new WaitForSeconds(0.5f);
             MoveGameObject();
             pressed = 1;
