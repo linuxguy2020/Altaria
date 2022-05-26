@@ -16,7 +16,6 @@ public class SpawnPointController : MonoBehaviour
           DeathMeshToDeActivate1.SetActive(false);
           DeathMeshToDeActivate2.SetActive(false);
           DeathMeshToDeActivate3.SetActive(false);
-          Debug.Log("Changed");
         }    
     }
 
