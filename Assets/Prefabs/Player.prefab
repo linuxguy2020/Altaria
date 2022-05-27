@@ -738,7 +738,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6367547295376283794}
-  m_LocalRotation: {x: 0.17645635, y: 0.049854726, z: -0.008949281, w: 0.9830044}
+  m_LocalRotation: {x: 0.17645635, y: 0.04985469, z: -0.008949274, w: 0.9830044}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1015,7 +1015,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6367547295858875094}
-  m_LocalRotation: {x: 0.17645639, y: 0.049854733, z: -0.008949275, w: 0.9830044}
+  m_LocalRotation: {x: 0.17645639, y: 0.049854696, z: -0.008949273, w: 0.9830044}
   m_LocalPosition: {x: 0, y: 2.5, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1707,7 +1707,7 @@ MonoBehaviour:
   jumpHeight: 0
   footStepSound: {fileID: 8300000, guid: 73e1e12fee128fe40a2764584e31fa4d, type: 3}
   jumpSound: {fileID: 8300000, guid: 1bc9fa7dc3725e244a259d30350b2de7, type: 3}
-  footStepSoundReverber: {fileID: 0}
+  footStepSoundReverber: {fileID: 8300000, guid: 1cf9341b181144949aa9b80f72839a03, type: 3}
   jumpSoundReverber: {fileID: 8300000, guid: ede694e9c6485404495fc4f0cb14ffad, type: 3}
 --- !u!114 &6367547294355116678
 MonoBehaviour:

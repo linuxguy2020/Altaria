@@ -30,11 +30,11 @@ public class CreditsManager : MonoBehaviour
         anim.Play("CreditsFader",  -1, 0f);
         yield return new WaitForSeconds(8.5f);
         yield return new WaitForSeconds(2f);
-        gameObject.GetComponent<UnityEngine.UI.Text>().text = "Giovanni Annuzzi";
+        gameObject.GetComponent<UnityEngine.UI.Text>().text = "Paolo Boca";
         anim.Play("CreditsFader",  -1, 0f);
         yield return new WaitForSeconds(8.5f);
         yield return new WaitForSeconds(2f);
-        gameObject.GetComponent<UnityEngine.UI.Text>().text = "Paolo Boca";
+        gameObject.GetComponent<UnityEngine.UI.Text>().text = "Giovanni Iannuzzi";
         anim.Play("CreditsFader",  -1, 0f);
         yield return new WaitForSeconds(8.5f);
         yield return new WaitForSeconds(2f);
