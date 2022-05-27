@@ -14,7 +14,14 @@ public class CollisionDetectionCube : MonoBehaviour
     [SerializeField] private GameObject WindCube;
     private GameObject DebrisCubeInstance;
     [SerializeField] private GameObject DebrisCube;
+	private AudioSource _soundSource;
+    [SerializeField] private AudioClip destructionSound;
+	[SerializeField] private AudioClip estinguishedSound;
     
+
+	public void Start(){
+		 _soundSource = GetComponent<AudioSource>();
+	}
 	    
 	private void OnTriggerEnter(Collider col)
 	{
@@ -27,6 +34,7 @@ public class CollisionDetectionCube : MonoBehaviour
 				GetComponent<MeshRenderer>().material = coalMaterial; //Cambio il materiale del cubo in carbone
 				GetComponent<ParticleSystem>().Stop();  //Fermo il particle
 				gameObject.tag = "CoalCube"; //Cambio il tag in Carbone
+				_soundSource.PlayOneShot(estinguishedSound); // Questo suono non lo attiviamo nel particle perché non si crea nessun altro oggetto
 			}
 
 		}
@@ -41,6 +49,7 @@ public class CollisionDetectionCube : MonoBehaviour
 					Quaternion.Euler(0,0,0));
 				Destroy(gameObject);
 				Destroy(WindCubeInstance, 5f);
+				//I suoni di questo effetto sono dentro il particle 
 
 
 
@@ -65,6 +74,9 @@ public class CollisionDetectionCube : MonoBehaviour
 					Quaternion.Euler(0,0,0));
 				Destroy(gameObject);
 				Destroy(DebrisCubeInstance, 8f);
+				
+				//I suoni di questo effetto sono dentro il particle 
+
 				
 				
 				

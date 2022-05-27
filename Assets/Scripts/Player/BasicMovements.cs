@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class BasicMovements : MonoBehaviour
@@ -22,12 +23,26 @@ public class BasicMovements : MonoBehaviour
     private Animator animator;
     private Vector2 input;
 	private bool isJumping;
+    private Scene scene;
+	
+	//AUDIO
+	private AudioSource _soundSource;
+    [SerializeField] private AudioClip footStepSound;
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip footStepSoundReverber;
+    [SerializeField] private AudioClip jumpSoundReverber;
+    private float _footStepSoundLength;
+    private bool _step;
     
     //START	 
 	void Start()
     {
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
+        _soundSource = GetComponent<AudioSource>();
+        _step = true;
+        _footStepSoundLength = 0.4f;
+         scene = SceneManager.GetActiveScene();
     }
 	//UPDATE	
     void Update()
@@ -46,6 +61,7 @@ public class BasicMovements : MonoBehaviour
         {
 			isJumping=false;
             velocity.y = -2f;
+            
         }
         
         if (isGrounded)
@@ -65,6 +81,7 @@ public class BasicMovements : MonoBehaviour
     		 if ( Input.GetKeyDown(KeyCode.Space))
             {
                 Jump();
+                
             }        
 
 			moveDirection *= moveSpeed;
@@ -75,6 +92,7 @@ public class BasicMovements : MonoBehaviour
                if(isJumping==false){
 			  	  animator.SetLayerWeight(animator.GetLayerIndex("Falling"), 1);//SET ANIMAZIONE
               	  animator.SetBool("Falling", true);//SET ANIMAZIONE
+                
 				}
              
         }
@@ -87,7 +105,21 @@ public class BasicMovements : MonoBehaviour
 	//BASIC MOVEMENT
     private void Walk()
     {
-        moveSpeed = walkSpeed;
+	    moveSpeed = walkSpeed;
+	    if (_step)
+	    {
+            if (scene.name == "Temple")
+            {
+		        _soundSource.PlayOneShot(footStepSoundReverber);
+		        StartCoroutine(WaitForFootSteps(_footStepSoundLength));
+            }
+            else{
+                _soundSource.PlayOneShot(footStepSound);
+		        StartCoroutine(WaitForFootSteps(_footStepSoundLength));
+            }
+	    }
+
+
     }
     
     private void Jump()
@@ -97,6 +129,15 @@ public class BasicMovements : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity); //Equazione per il calcolo del salto
             animator.SetLayerWeight(animator.GetLayerIndex("Jump"), 1); //SET ANIMAZIONE
             animator.SetTrigger("Jump"); //SET ANIMAZIONE
+             if (scene.name == "Temple")
+             {
+                _soundSource.PlayOneShot(jumpSoundReverber);
+             }
+             else
+             {
+                 _soundSource.PlayOneShot(jumpSound);
+             }
+        
      }
 
 	//UTILS
@@ -105,6 +146,13 @@ public class BasicMovements : MonoBehaviour
 
 		jumpHeight=height; //Altezza del salto
 	}
+	
+	IEnumerator WaitForFootSteps(float stepsLength) {
+		_step = false;
+		yield return new WaitForSeconds(stepsLength);
+		_step = true;
+	}
+   
 
 
     

@@ -7,6 +7,7 @@ public class MagicSphere : MonoBehaviour
    private Rigidbody magicSphereRigidBody;
    public float speed=10.0f;
    private float timeToDestroy = 3f;
+  
    
    private void Start()
    {
