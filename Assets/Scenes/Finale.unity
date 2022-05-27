@@ -878,5 +878,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc70663067983149b0667fbfdd8fb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneId: 0
+  SceneName: Credits
   delay: 31

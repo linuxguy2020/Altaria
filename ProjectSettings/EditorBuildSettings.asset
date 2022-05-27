@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SkypieaLevel.unity
     guid: 6b8fd0a9d8ab78f44bfbd527fbc9662f
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 7dd8fac5e1f95c44b92da75b081370be
   m_configObjects: {}

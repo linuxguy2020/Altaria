@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeLevelAfterDelay : MonoBehaviour
 {
-    public int SceneId = 0;
+    public string SceneName = "MainMenu";
     public float delay = 0;
 
     void Start()
@@ -16,6 +16,6 @@ public class ChangeLevelAfterDelay : MonoBehaviour
     IEnumerator LoadLevelAfterDelay(float delay)
      {
          yield return new WaitForSeconds(delay);
-         SceneManager.LoadScene(SceneId);
+         SceneManager.LoadScene(SceneName);
      }
 }

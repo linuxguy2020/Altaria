@@ -5,12 +5,12 @@ using UnityEngine.Video;
 public class VideoController : MonoBehaviour
 {
  
-     VideoPlayer video;
+    VideoPlayer video;
 
     void Update(){
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("Tutorial");
         }
     }
  
@@ -24,6 +24,6 @@ public class VideoController : MonoBehaviour
  
      void CheckOver(UnityEngine.Video.VideoPlayer vp)
     {
-        SceneManager.LoadScene(2);//the scene that you want to load after the video has ended.
+        SceneManager.LoadScene("Tutorial");//the scene that you want to load after the video has ended.
     }
 }
