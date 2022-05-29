@@ -14,7 +14,9 @@ public class LevelChanger : MonoBehaviour
     [SerializeField] private GameObject white;
     public string SceneName = "MainMenu";
     public float delay = 0;
-
+    private float _actualMusicVolume;
+    public float FadeTime = 2.0f;
+    public AudioSource music;
     public AudioSource audioSource;
     public AudioClip clip;
     public float volume = 0.5f;
@@ -29,8 +31,18 @@ public class LevelChanger : MonoBehaviour
           c.gameObject.GetComponent<BasicMovements>().enabled = false;
           c.gameObject.GetComponent<Animator>().enabled = false;
           c.gameObject.GetComponent<CameraController>().enabled = false;
+          music = c.gameObject.transform.GetChild(4).gameObject.GetComponent<AudioSource>();
+          FadeMusicOut(music);
           StartCoroutine(LoadLevelAfterDelay(delay));
         }    
+   }
+
+   public void FadeMusicOut(AudioSource music){
+        _actualMusicVolume = music.volume;
+        while (music.volume > 0) {
+            music.volume -= 0.1f;
+        }
+        music.volume = _actualMusicVolume;
    }
 
    IEnumerator LoadLevelAfterDelay(float delay)
