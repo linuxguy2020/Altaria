@@ -22,7 +22,7 @@ public class BoostMovement : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Sphere"))
+        if (other.gameObject.CompareTag("WindPower"))
         {
             MoveObject();
         }

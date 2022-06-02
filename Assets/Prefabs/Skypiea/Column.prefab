@@ -154,7 +154,7 @@ Transform:
   m_GameObject: {fileID: 4623867051125956763}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 27.032436, y: 0, z: 20.277754}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 200, y: 100, z: 200}
   m_Children:
   - {fileID: 7018726357004009859}
   - {fileID: 2410513515558221592}
@@ -171,14 +171,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4623867051125956763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6201d1d3bd43d24ea3ce3c79540dfcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bae2888a224b384aa73a7ecdbeea8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.3
-  positiveLength: 1
-  negativeLength: 1
-  axis: 121
-  moving: 0
+  Player: {fileID: 0}
 --- !u!114 &6234545283937969349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,10 +184,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 4623867051125956763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c47f8a5f66fc2ff499a2b6dd3df08186, type: 3}
+  m_Script: {fileID: 11500000, guid: 1720865447d776e4eaa2f83c9640c4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  speed: 0.3
+  positiveLength: 1
+  negativeLength: 1
+  axis: 120
+  moving: 0
+  positiveDirection: 1
 --- !u!65 &8664121106308185626
 BoxCollider:
   m_ObjectHideFlags: 0

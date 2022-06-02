@@ -12,6 +12,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6d5b868510d1b004dbdce52f5117649f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6d5b868510d1b004dbdce52f5117649f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6d5b868510d1b004dbdce52f5117649f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6d5b868510d1b004dbdce52f5117649f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.588062
       objectReference: {fileID: 0}
@@ -106,14 +118,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4356655255269968022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6201d1d3bd43d24ea3ce3c79540dfcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bae2888a224b384aa73a7ecdbeea8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  positiveLength: 1
-  negativeLength: 1
-  axis: 120
-  moving: 0
+  Player: {fileID: 0}
 --- !u!114 &9088697723991763542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +131,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4356655255269968022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c47f8a5f66fc2ff499a2b6dd3df08186, type: 3}
+  m_Script: {fileID: 11500000, guid: 1720865447d776e4eaa2f83c9640c4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  speed: 0.3
+  positiveLength: 1
+  negativeLength: 1
+  axis: 120
+  moving: 0
+  positiveDirection: 1
