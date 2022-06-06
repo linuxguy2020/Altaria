@@ -20,7 +20,7 @@ public class CameraController : MonoBehaviour
 
     //FixedUpdate è utilizzato quando si applicano funzioni relative alla fisica,
     //perché sai che verrà eseguito esattamente in sincronia con il motore fisico stesso.
-	void FixedUpdate()
+	void LateUpdate()
 	{
 		float cameraRotation = mainCamera.transform.rotation.eulerAngles.y;
 		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, cameraRotation, 0),

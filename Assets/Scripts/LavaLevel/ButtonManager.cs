@@ -9,7 +9,11 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject Symbol;
     public Material newMat;
     private Vector3 pos;
+    public AudioSource audioSource;
+    public AudioClip clip;
+    public float volume = 0.7f;
     private int pressed = 0;
+    
 
     //Update the column y axis (increase by 3 units)
     private void MoveGameObject()
@@ -39,6 +43,7 @@ public class ButtonManager : MonoBehaviour
     IEnumerator UnlockColumn()
      {
          if(pressed == 0){
+            audioSource.PlayOneShot(clip, volume); 
             UpdateButton();
             yield return new WaitForSeconds(0.5f);
             MoveGameObject();
