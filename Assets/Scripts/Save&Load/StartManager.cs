@@ -34,9 +34,9 @@ public class StartManager : MonoBehaviour
     //Delete save data file 
     void EraseData()
     {
-	    if (File.Exists(Application.dataPath + "/Saves/MySaveData.json"))
+	    if (File.Exists(Application.persistentDataPath + "/MySaveData.json"))
 	    {
-		    File.Delete(Application.dataPath + "/Saves/MySaveData.json");
+		    File.Delete(Application.persistentDataPath + "/MySaveData.json");
         }
     }
 

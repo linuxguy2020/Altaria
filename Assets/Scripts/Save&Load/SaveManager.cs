@@ -7,17 +7,17 @@ public class SaveManager : MonoBehaviour
 {
     //This script manages the behavior of save and load system in the game. It is keep alive with the GameManager object (that is DontDestroy on Load type)
     //All other scripts and scenes ask it to save or load data in the game
-    public int Intro;
-    public int Tutorial;
-    public int Crystal1;
-    public int Crystal2;
+    public int Intro = 0;
+    public int Tutorial = 0;
+    public int Crystal1 = 0;
+    public int Crystal2 = 0;
 
     // Create a field for the save file.
     string saveFile;
 
     void Awake(){
         //Define a path for save data inside Saves Folder in Assets Folder
-        saveFile = Application.dataPath + "/Saves/MySaveData.json";
+        saveFile = Application.persistentDataPath + "/MySaveData.json";
     }
 
     //Create a first json save data where all values are zero 
