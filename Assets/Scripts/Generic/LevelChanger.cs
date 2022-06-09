@@ -16,13 +16,13 @@ public class LevelChanger : MonoBehaviour
     public float delay = 0;
     private float _actualMusicVolume;
     public float FadeTime = 2.0f;
-    public AudioSource music;
+    private AudioSource music;
     public AudioSource audioSource;
     public AudioClip clip;
     public float volume = 0.5f;
 
     void Start(){
-      white.GetComponent<Animator>().enabled = false;
+      white.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider c)
@@ -48,7 +48,7 @@ public class LevelChanger : MonoBehaviour
    IEnumerator LoadLevelAfterDelay(float delay)
      { 
          audioSource.PlayOneShot(clip, volume);
-         white.GetComponent<Animator>().enabled = true;
+         white.SetActive(true);
          yield return new WaitForSeconds(delay);
          SceneManager.LoadScene(SceneName);
      }

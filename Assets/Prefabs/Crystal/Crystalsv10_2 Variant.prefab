@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6217743538782583742, guid: 8e9a92012c3671349865dd616af48070, type: 3}
+      propertyPath: m_Color.b
+      value: 0.30817604
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217743538782583742, guid: 8e9a92012c3671349865dd616af48070, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217743538782583742, guid: 8e9a92012c3671349865dd616af48070, type: 3}
+      propertyPath: m_Color.r
+      value: 0.40494537
+      objectReference: {fileID: 0}
     - target: {fileID: 6279830959940632962, guid: 8e9a92012c3671349865dd616af48070, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6283350605947177660, guid: 8e9a92012c3671349865dd616af48070, type: 3}
       propertyPath: m_Name
-      value: Crystalsv10_2
+      value: Crystalsv10_2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6284328263570809076, guid: 8e9a92012c3671349865dd616af48070, type: 3}
       propertyPath: speed
