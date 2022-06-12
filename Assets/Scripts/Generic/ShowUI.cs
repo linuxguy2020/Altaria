@@ -29,7 +29,7 @@ public class ShowUI : MonoBehaviour
     // use real time seconds to wait
     IEnumerator WaitForSec()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6);
 
         // destroy image
         Destroy(uiObject);
