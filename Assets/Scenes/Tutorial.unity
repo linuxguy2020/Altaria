@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &4165111 stripped
@@ -374,6 +378,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -581,6 +589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &63508184 stripped
@@ -642,6 +654,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -839,6 +855,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 473004, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -907,6 +927,18 @@ PrefabInstance:
     - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_Name
       value: torch (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_RootOrder
@@ -1280,6 +1312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &153775646 stripped
@@ -1287,6 +1323,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4155576106342871275, guid: 7a234c022709f35448dce835cc22d160, type: 3}
   m_PrefabInstance: {fileID: 153775645}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &165464512
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Override
+  m_Shader: {fileID: 4800000, guid: a3a3bc8785681554d9558e2ea68f100e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _Banner: 1
+    - _DirectionalCat: 1
+    - _DirectionalFalloff: 2
+    - _DirectionalIntensity: 1
+    - _FogAxisMode: 1
+    - _FogCat: 1
+    - _FogColorDuo: 1
+    - _FogDistanceEnd: 200
+    - _FogDistanceFalloff: 2
+    - _FogDistanceStart: -200
+    - _FogHeightEnd: 200
+    - _FogHeightFalloff: 2
+    - _FogHeightStart: 0
+    - _FogIntensity: 1
+    - _FogLayersMode: 0
+    - _IsHeightFogPreset: 1
+    - _IsHeightFogShader: 1
+    - _NoiseCat: 1
+    - _NoiseDistanceEnd: 50
+    - _NoiseIntensity: 1
+    - _NoiseModeBlend: 1
+    - _NoiseScale: 30
+    - _SkyboxCat: 1
+    - _SkyboxFogBottom: 0
+    - _SkyboxFogFalloff: 1
+    - _SkyboxFogFill: 1
+    - _SkyboxFogHeight: 1
+    - _SkyboxFogIntensity: 1
+    - _SkyboxFogOffset: 0
+    m_Colors:
+    - _DirectionalColor: {r: 1, g: 0.7793103, b: 0.5, a: 1}
+    - _DirectionalDir: {r: 0, g: 0, b: 0, a: 0}
+    - _FogAxisOption: {r: 0, g: 0, b: 0, a: 0}
+    - _FogColorEnd: {r: 0.8862745, g: 1.443137, b: 2, a: 1}
+    - _FogColorStart: {r: 0.4411765, g: 0.722515, b: 1, a: 1}
+    - _NoiseSpeed: {r: 0.5, g: 0, b: 0.5, a: 0}
+  m_BuildTextureStacks: []
 --- !u!1001 &165705866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1297,6 +1390,18 @@ PrefabInstance:
     - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_Name
       value: torch (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_RootOrder
@@ -1426,6 +1531,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -1711,6 +1820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &205915004 stripped
@@ -1822,6 +1935,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -2704,6 +2821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &408552201 stripped
@@ -2765,6 +2886,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -2841,15 +2966,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367547294382586362, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1415201
+      value: 0.14152011
       objectReference: {fileID: 0}
     - target: {fileID: 6367547294382586362, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.04011973
+      value: -0.040119693
       objectReference: {fileID: 0}
     - target: {fileID: 6367547294382586362, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.005740285
+      value: 0.0057402803
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295214694624, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2873,11 +2998,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295214694624, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.03988472
+      value: -0.039884683
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295214694624, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.007193843
+      value: 0.007193836
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295376283793, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2893,15 +3018,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295376283793, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1779881
+      value: 0.17798811
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295376283793, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.010216609
+      value: 0.010216583
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295376283793, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0018480453
+      value: -0.0018480415
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295858875091, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2921,15 +3046,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295858875091, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17798808
+      value: 0.17798811
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295858875091, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.010216579
+      value: 0.0102165565
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295858875091, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.001847899
+      value: -0.0018478977
       objectReference: {fileID: 0}
     - target: {fileID: 6367547295981925805, guid: f584eff4fb5f4d14e983ac5429482f19, type: 3}
       propertyPath: m_RootOrder
@@ -3331,6 +3456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideTower (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5295775290443081682, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
 --- !u!4 &552559492 stripped
@@ -3366,6 +3495,10 @@ PrefabInstance:
     - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_Name
       value: wall1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 473004, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_RootOrder
@@ -3435,6 +3568,10 @@ PrefabInstance:
     - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_Name
       value: wall1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 473004, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_RootOrder
@@ -3623,6 +3760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideTower (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5295775290443081682, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
 --- !u!4 &619959084 stripped
@@ -3684,6 +3825,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -3821,6 +3966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &690496670 stripped
@@ -3883,6 +4032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &710353401 stripped
@@ -3890,6 +4043,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4155576106342871275, guid: 7a234c022709f35448dce835cc22d160, type: 3}
   m_PrefabInstance: {fileID: 710353400}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &716635198
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Height Fog Global
+  m_Shader: {fileID: 4800000, guid: 3a7ef1b66bafb7a448a880ef76d2e6e6, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _AdvancedCat: 1
+    - _Banner: 1
+    - _DirectionalCat: 1
+    - _FogAxisMode: 1
+    - _FogCat: 1
+    - _HeightFogGlobal: 1
+    - _IsHeightFogShader: 1
+    - _NoiseCat: 1
+    - _SkyboxCat: 1
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1001 &720555085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3944,6 +4128,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -4007,6 +4195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideTower (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5295775290443081682, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
 --- !u!4 &723411804 stripped
@@ -4068,6 +4260,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -4253,6 +4449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 473004, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4392,6 +4592,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -4605,6 +4809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &798644085 stripped
@@ -4775,6 +4983,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -4991,6 +5203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &881122871 stripped
@@ -5057,6 +5273,10 @@ PrefabInstance:
     - target: {fileID: 5295775290443081682, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
       propertyPath: m_Name
       value: OutsideTower (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295775290443081682, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
@@ -5175,6 +5395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!1001 &968160194
@@ -5187,6 +5411,18 @@ PrefabInstance:
     - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_Name
       value: torch (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_RootOrder
@@ -5341,6 +5577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1007889446 stripped
@@ -5358,6 +5598,18 @@ PrefabInstance:
     - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_Name
       value: torch (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_RootOrder
@@ -5440,9 +5692,49 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 774685251}
     m_Modifications:
+    - target: {fileID: 100000, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
       propertyPath: m_Name
       value: Cathedral
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6d67fd78499b97640be95e3ea0b4416f, type: 3}
       propertyPath: m_RootOrder
@@ -5630,6 +5922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideTower (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5295775290443081682, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
 --- !u!4 &1041792459 stripped
@@ -5691,6 +5987,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -5754,6 +6054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1057593259 stripped
@@ -5815,6 +6119,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -5886,6 +6194,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -5984,6 +6296,10 @@ PrefabInstance:
     - target: {fileID: 175106, guid: b84cdff1414a1094d995361dae7b91b1, type: 3}
       propertyPath: m_Name
       value: wall2 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 175106, guid: b84cdff1414a1094d995361dae7b91b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 438672, guid: b84cdff1414a1094d995361dae7b91b1, type: 3}
       propertyPath: m_RootOrder
@@ -6107,6 +6423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1191969833 stripped
@@ -6187,6 +6507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1202395246 stripped
@@ -6253,37 +6577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45103a93a6588b2439cd343bebc4b6e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &1206255336
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Height Fog Global
-  m_Shader: {fileID: 4800000, guid: 3a7ef1b66bafb7a448a880ef76d2e6e6, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3001
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats:
-    - _AdvancedCat: 1
-    - _Banner: 1
-    - _DirectionalCat: 1
-    - _FogAxisMode: 1
-    - _FogCat: 1
-    - _HeightFogGlobal: 1
-    - _IsHeightFogShader: 1
-    - _NoiseCat: 1
-    - _SkyboxCat: 1
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &1208049380
 GameObject:
   m_ObjectHideFlags: 0
@@ -6435,6 +6728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1223761845 stripped
@@ -6514,6 +6811,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -6781,6 +7082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1277892857 stripped
@@ -6961,6 +7266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 473004, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -7074,6 +7383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1304363337 stripped
@@ -7091,6 +7404,18 @@ PrefabInstance:
     - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_Name
       value: torch (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_RootOrder
@@ -7221,6 +7546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1318886995 stripped
@@ -7233,63 +7562,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 402248, guid: 6fb002a65bc74bf46ba6b669a1a59a79, type: 3}
   m_PrefabInstance: {fileID: 1576327438}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1357493779
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Override
-  m_Shader: {fileID: 4800000, guid: a3a3bc8785681554d9558e2ea68f100e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats:
-    - _Banner: 1
-    - _DirectionalCat: 1
-    - _DirectionalFalloff: 2
-    - _DirectionalIntensity: 1
-    - _FogAxisMode: 1
-    - _FogCat: 1
-    - _FogColorDuo: 1
-    - _FogDistanceEnd: 200
-    - _FogDistanceFalloff: 2
-    - _FogDistanceStart: -200
-    - _FogHeightEnd: 200
-    - _FogHeightFalloff: 2
-    - _FogHeightStart: 0
-    - _FogIntensity: 1
-    - _FogLayersMode: 0
-    - _IsHeightFogPreset: 1
-    - _IsHeightFogShader: 1
-    - _NoiseCat: 1
-    - _NoiseDistanceEnd: 50
-    - _NoiseIntensity: 1
-    - _NoiseModeBlend: 1
-    - _NoiseScale: 30
-    - _SkyboxCat: 1
-    - _SkyboxFogBottom: 0
-    - _SkyboxFogFalloff: 1
-    - _SkyboxFogFill: 1
-    - _SkyboxFogHeight: 1
-    - _SkyboxFogIntensity: 1
-    - _SkyboxFogOffset: 0
-    m_Colors:
-    - _DirectionalColor: {r: 1, g: 0.7793103, b: 0.5, a: 1}
-    - _DirectionalDir: {r: 0, g: 0, b: 0, a: 0}
-    - _FogAxisOption: {r: 0, g: 0, b: 0, a: 0}
-    - _FogColorEnd: {r: 0.8862745, g: 1.443137, b: 2, a: 1}
-    - _FogColorStart: {r: 0.4411765, g: 0.722515, b: 1, a: 1}
-    - _NoiseSpeed: {r: 0.5, g: 0, b: 0.5, a: 0}
-  m_BuildTextureStacks: []
 --- !u!1 &1409377788
 GameObject:
   m_ObjectHideFlags: 0
@@ -7538,6 +7810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1457808738 stripped
@@ -7618,6 +7894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1468315627 stripped
@@ -7679,6 +7959,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -7890,6 +8174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1506657225 stripped
@@ -8044,6 +8332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (101)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1565239236 stripped
@@ -8061,6 +8353,18 @@ PrefabInstance:
     - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_Name
       value: torch (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_RootOrder
@@ -8221,6 +8525,10 @@ PrefabInstance:
     - target: {fileID: 169516, guid: 6fb002a65bc74bf46ba6b669a1a59a79, type: 3}
       propertyPath: m_Name
       value: wall2 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 169516, guid: 6fb002a65bc74bf46ba6b669a1a59a79, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 402248, guid: 6fb002a65bc74bf46ba6b669a1a59a79, type: 3}
       propertyPath: m_RootOrder
@@ -8464,6 +8772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 473004, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -8614,6 +8926,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1608953584 stripped
@@ -8675,6 +8991,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (102)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -8822,6 +9142,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -9008,6 +9332,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: torch (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -9137,6 +9473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1658316748 stripped
@@ -9198,6 +9538,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -9261,6 +9605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1662954730 stripped
@@ -9278,6 +9626,18 @@ PrefabInstance:
     - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_Name
       value: torch (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_RootOrder
@@ -9413,6 +9773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1714017665 stripped
@@ -9474,6 +9838,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -9537,6 +9905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1744371979 stripped
@@ -9599,6 +9971,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1748873940 stripped
@@ -9616,6 +9992,10 @@ PrefabInstance:
     - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_Name
       value: wall1
+      objectReference: {fileID: 0}
+    - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 473004, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_RootOrder
@@ -9729,6 +10109,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -10007,6 +10391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1810712691 stripped
@@ -10047,6 +10435,14 @@ PrefabInstance:
     - target: {fileID: 118334, guid: 0b7f3b033306b6d4b956436528383403, type: 3}
       propertyPath: m_Name
       value: doorway1
+      objectReference: {fileID: 0}
+    - target: {fileID: 118334, guid: 0b7f3b033306b6d4b956436528383403, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 196402, guid: 0b7f3b033306b6d4b956436528383403, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 499586, guid: 0b7f3b033306b6d4b956436528383403, type: 3}
       propertyPath: m_RootOrder
@@ -10161,6 +10557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1815052783 stripped
@@ -10223,6 +10623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1816489514 stripped
@@ -10284,6 +10688,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -10453,6 +10861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 473004, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -10571,6 +10983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1908493134 stripped
@@ -10598,6 +11014,18 @@ PrefabInstance:
     - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_Name
       value: torch (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_RootOrder
@@ -10809,6 +11237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &1939143425 stripped
@@ -10927,6 +11359,18 @@ PrefabInstance:
     - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_Name
       value: torch (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
       propertyPath: m_RootOrder
@@ -11288,6 +11732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &2031283092 stripped
@@ -11349,6 +11797,10 @@ PrefabInstance:
     - target: {fileID: 5295775290443081682, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
       propertyPath: m_Name
       value: OutsideTower (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295775290443081682, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc03e2dd4c83524f88f16ff7f927dea, type: 3}
@@ -11412,6 +11864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OutsideWall (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
 --- !u!4 &2060255126 stripped
@@ -11473,6 +11929,10 @@ PrefabInstance:
     - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
       propertyPath: m_Name
       value: OutsideWall (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243784405062537994, guid: 7a234c022709f35448dce835cc22d160, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a234c022709f35448dce835cc22d160, type: 3}
@@ -11831,7 +12291,7 @@ MonoBehaviour:
   manualPositionAndScale: 0
   renderPriority: 1
   styledSpace0: 0
-  overrideMaterial: {fileID: 1357493779}
+  overrideMaterial: {fileID: 165464512}
   overrideCamToVolumeDistance: 1
   overrideVolumeDistanceFade: 0
   version: 0
@@ -11862,7 +12322,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1206255336}
+  - {fileID: 716635198}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

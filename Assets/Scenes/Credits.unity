@@ -189,11 +189,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &292455858 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4450522417713801219, guid: 1c3c2a0139fd92840b3f36de0a27ea08, type: 3}
-  m_PrefabInstance: {fileID: 4450522417463356849}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &674523794
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +469,7 @@ RectTransform:
   - {fileID: 1512728983}
   - {fileID: 1140960526}
   - {fileID: 1465868085}
-  - {fileID: 292455858}
+  - {fileID: 4450522417463356850}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -536,7 +531,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -870,6 +865,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1168427421}
     m_Modifications:
+    - target: {fileID: 349484440697578227, guid: 1c3c2a0139fd92840b3f36de0a27ea08, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4450522417713801216, guid: 1c3c2a0139fd92840b3f36de0a27ea08, type: 3}
       propertyPath: m_Name
       value: SkipMsg
@@ -960,3 +959,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c3c2a0139fd92840b3f36de0a27ea08, type: 3}
+--- !u!224 &4450522417463356850 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 349484440697578227, guid: 1c3c2a0139fd92840b3f36de0a27ea08, type: 3}
+  m_PrefabInstance: {fileID: 4450522417463356849}
+  m_PrefabAsset: {fileID: 0}
